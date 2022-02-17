@@ -80,7 +80,7 @@ shoppingСart.getTotalGoods = function(goods) {
 
     for(let el of this) {
         result.totalAmount += el.amount;
-        result.totalSumm += goods[el.good].price;
+        result.totalSumm += goods[el.good].price * el.amount;
     }
 
     return result;
